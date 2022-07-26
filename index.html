@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gif.Os</title>
+
+    <link type="text/css" rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet"> 
+
+</head>
+<body id="body" class="tema-dia">
+    <header>
+        <section id="welcome-bar">
+            <h1 class="welcome">
+                ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+            </h1>    
+        </section>
+    </header>    
+    <main class="page-home">
+        <section id="inicio" >
+            <div class="cont-logo">
+                <img src="./assets/images/gifOF_logo.png" alt="Logo gifOS" id="logo">
+            </div>
+            <div class="cont-menu">
+                <a id="link-captura" href="captura.html?theme=tema-dia">
+                    <button class="crear-gifos button-pink">
+                        Crear Guifos 
+                    </button>
+                </a>
+                <button class="elegir-tema button-pink">
+                    Elegir tema
+                </button> 
+                <button id="flecha-menu-temas" class="flecha button-s button-pink">
+                    <img src="./assets/images/dropdown.svg" alt="Flecha del menu">
+                </button> 
+                <div id="menu-temas" class="contenedor fondo-cuadro">
+                    <button class="sailor-day button-grey">Sailor Day</button>
+                    <button class="sailor-night button-grey">Sailor Night</button>
+                </div>
+                <div class="mis-guifos">            
+                    <a>
+                        <span class="m-style">M</span>is Guifos
+                    </a>
+                </div>
+            </div>
+        </section>    
+        <!-- contenedor BUSQUEDAS -->
+        <section id="home">
+            <section id="buscar">
+                <div class="cont-buscar grid-cont m-top">
+                    <h2 class="titulo-cont col-12">
+                        Buscar
+                    </h2>
+                    <div class="buscar-gifs col-12 contenedor fondo-cuadro grid-cont">
+                        <input id="inputBusqueda" value="" class="input-buscar col-9" type="text" name="search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                        <button id="lupita-buscar" class="button-m button-pink col-2" disabled>
+                            <img src="./assets/images/lupa_inactive.svg" alt="Lupa inactiva">
+                            Buscar
+                        </button>
+                    </div>
+                    <div id="cont-busqueda" class="col-12 contenedor fondo-cuadro">
+                    </div>
+                </div>
+            </section>
+            <!-- bloque TITULOS SUGERIDOS -->
+            <section id="tags-sugeridos">
+                <div class="cont-tags m-top">
+                    <button class="tags button-blue2">ejemplo</button>
+                    <button class="tags button-blue2">ejemplo</button>
+                    <button class="tags button-blue2">ejemplo</button>    
+                </div>
+            </section>
+            <!-- bloque HOY TE SUGERIMOS -->
+            <section id="hoy-te-sugerimos" class="d-flex">
+                <div class="cont-hoy-te-sugerimos c-contenido">
+                    <h2 class="titulo-bloques titulo-hoy-te-sugerimos">
+                        Hoy te sugerimos:
+                    </h2>
+                    <div class="cont-cuadros grid-cont">
+                        <div class="col-fix col-md-5 cuadro fondo-cuadro">
+                            <h3 class="hashtag">#Hashtag</h3>
+                            <button class="button-close">
+                                <img src="./assets/images/button3.svg" alt="button close">
+                            </button>
+                            <img class="gifs" src="" alt="">
+                            <button class="ver-mas button-blue">Ver más...</button>
+                        </div>
+                        <div class="col-fix col-md-5 cuadro fondo-cuadro">
+                            <h3 class="hashtag">#Hashtag</h3>
+                            <button class="button-close">
+                                <img src="./assets/images/button3.svg" alt="close button">
+                            </button>
+                            <img class="gifs" src="" alt="">
+                            <button class="ver-mas button-blue">Ver más...</button>
+                        </div>    
+                        <div class="col-fix col-md-5 cuadro fondo-cuadro">
+                            <h3 class="hashtag">#Hashtag</h3>
+                            <button class="button-close">
+                                <img src="./assets/images/button3.svg" alt="close button">
+                            </button>
+                            <img class="gifs" src="" alt="">
+                            <button class="ver-mas button-blue">Ver más...</button> 
+                        </div> 
+                        <div class="col-fix col-md-5 cuadro fondo-cuadro">
+                            <h3 class="hashtag">#Hashtag</h3>
+                            <button class="button-close">
+                                <img src="./assets/images/button3.svg" alt="close button">
+                            </button>
+                            <img class="gifs" src="" alt="">
+                            <button class="ver-mas button-blue">Ver más...</button> 
+                        </div>                    
+                    </div>    
+                </div>
+            </section> 
+            <!-- bloque TENDENCIAS -->
+            <section id="tendencias" class="d-flex">
+                <div class="cont-tendencias c-contenido">
+                    <h2 class="titulo-bloques">
+                        Tendencias:
+                    </h2>
+                    <!-- <div> DINAMICOS </div>-->
+                </div>
+            </section>
+        </section>
+        <section id="mis-guifos-home" class="grid-cont d-none">
+            <div class="cont-mis-guifos col-12 m-top">
+                <h2 class="titulo-bloques">
+                    Mis guifos
+                </h2>
+                <!-- gif creados guardados en localStorage -->
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/scripts/shared.js"></script>
+    <script src="./assets/scripts/index.js"></script>
+
+</body>
+</html>

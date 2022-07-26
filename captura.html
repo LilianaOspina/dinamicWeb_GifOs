@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Guifos</title>
+    <link type="text/css" rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet"> 
+
+</head>
+<body id="body" class="">    
+    <main class="page-captura">
+        <section id="inicio-captura" class="grid-cont">
+            <div class="cont-arrow col-1">
+                <a href="./index.html">
+                    <img src="./assets/images/arrow.svg" alt="Logo Arrow">
+                </a>
+            </div>
+            <div class="col-1">
+                <img src="./assets/images/gifOF_logo.png" alt="Logo gifOS" id="logo">
+            </div>
+        </section>
+        <!-- contenedor INSTRUCCIONES -->
+        <section id="instrucciones" class="grid-cont">
+            <div class="cont-instrucciones col-6-5 contenedor m-top grid-cont fondo-cuadro">
+                <h2 class="titulo-cont col-12">
+                    Crear Guifos
+                </h2>
+                    <div class="img-window col-1">
+                        <img src="./assets/images/window_img.png" alt="" srcset="">
+                    </div>
+                    <h3 class="titulo-inst col-10">
+                        Aquí podrás crear tus propios guifos
+                    </h3>
+                    <div class="instrucciones">
+                        <p class="texto-inst">
+                            Crear tu <span class="g-style">guifo</span> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:
+                        </p>
+                        <ol>
+                            <li>Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</li>
+                            <li>Capturar tu momento guifo </li>
+                            <li>Revisar el momento </li>
+                            <li>Listo para subir y compartir!</li>
+                        </ol>
+                        <p class="texto-inst">
+                            ¿Quieres comenzar a crear tu <span class="g-style">guifo</span> ahora?
+                        </p>
+                    </div>
+                    <div class="cont-botones">
+                        <button class="botones button-m button-rose">
+                            <a href="./index.html"> 
+                                Cancelar
+                            </a>
+                        </button>
+                        <button class="botones comenzar button-m button-pink">
+                            Comenzar
+                        </button>    
+                    </div>
+            </div>
+        </section>
+        <!-- contenedor dinamico -->
+        <section id="cont-captura" class="grid-cont">
+            <div class="contenedor col-8 grid-cont m-top fondo-cuadro">
+                <h2 class="titulo-dinamico titulo-cont col-12">
+                    <!-- Un Chequeo Antes de Empezar -->
+                    <!-- Capturando Tu Guifo -->
+                    <!-- Vista Previa -->
+                </h2>
+                <a href="./captura.html">
+                    <button class="button-close2">
+                        <img src="./assets/images/button3.svg" alt="" srcset="">
+                    </button>
+                </a>
+                
+                <video src="" class="captura-video col-11-5">
+                    <!-- Aqui graba gif-->
+                </video>
+                <video loop autoplay src="" class="preview-gif col-11-5">
+                    <!-- Aqui inserta gif ES VIDEO O IMG? -->
+                </video>
+                    <!-- BOTONES DINAMICOS -->
+                    <!-- UN CHEQUEO ANTES DE COMENZAR -->
+                    <div class="cont-botones-check button-box">
+                        <button class="boton-cam button-s button-pink">
+                            <img class="cam" src="./assets/images/camera.svg" alt="" srcset="">
+                        </button>
+                        <button class="rec-video button-m button-pink">
+                            Capturar
+                        </button>    
+                    </div>
+                    <!-- CAPTURANDO TU GUIFO -->
+                    <div class="cont-botones-recording button-box grid-cont">
+                        <div class="col-9"> 
+                            <h3 class="contador contador-style" id="counter">
+                                00:00:00
+                            </h3>
+                        </div>
+                        <div class="button-box2 col-3">
+                            <button class="boton-cam button-s button-red">
+                                <img class="cam" src="./assets/images/recording.svg" alt="" srcset="">
+                            </button>
+                            <button class="stop-video button-m button-red">
+                                Listo
+                            </button> 
+                        </div>    
+                    </div>
+                    <!-- VISTA PREVIA -->
+                    <div class="cont-botones-preview button-box grid-cont">
+                        <div class="contador col-2"> 
+                            <h3 class="" id="current-counter">
+
+                            </h3>
+                        </div>
+                        <div class="progress-bar-preview col-4 grid-cont">
+                            <button id="videoControl" class="play-gif button-pink">
+                                <img src="./assets/images/forward.svg" alt="" srcset="">
+                            </button>
+                            <div class="barra-preview">
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                                <div class="barritas"></div>
+                            </div>
+                        </div>
+                        <button class="repetir col-2 button-rose">
+                            Repetir Captura
+                        </button>
+                        <button class="subir col-2 button-pink">
+                            Subir Guifo
+                        </button>    
+                    </div>
+            </div>
+        </section>
+        <!-- contenedor UPLOAD -->
+        <section id="upload" class="grid-cont m-top">
+            <div class="cont-upload contenedor col-7 grid-cont fondo-cuadro">
+                <h2 class="titulo-cont col-12">
+                    Subiendo Tu Guifo
+                </h2>
+                <div class="cont-uploading col-11">
+                    <img src="./assets/images/globe_img.png" alt="Globo vintage" srcset="">
+                    <h3 class="titulo-inst" >
+                        Estamos subiendo tu guifo...
+                    </h3>
+                    <div class="progress-bar-upload">
+                        <div class="barra-upload"> 
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                            <div class="barritas"></div>
+                        </div>
+                    </div>
+                    <h4 class="time-joke">
+                        Tiempo restante: <span class="time-joke-style">38 años</span> algunos minutos
+                    </h4>
+                </div>
+                <div class="cont-botones">
+                    <a href="./captura.html">
+                        <button class="cancelar button-m button-rose">
+                            Cancelar
+                        </button>
+                    </a>
+                </div>
+            </div>  
+        </section>
+        <!-- contenedor DOWNLOAD -->
+        <section id="download" class="grid-cont m-top">
+            <div class="cont-download contenedor col-7 grid-cont fondo-cuadro">
+                    <h2 class="titulo-cont col-12">
+                        Guifo Subido Con Éxito
+                    </h2>
+                    <button class="button-close2">
+                        <img src="./assets/images/button3.svg" alt="" srcset="">
+                    </button>
+                <div class="down grid-cont">
+                    <div class="cont-preview-download col-6">
+                        <img class="preview-download" src="" alt="" srcset="">
+                        <!-- AQUI SALE EL GIF RECIEN GRABADO --> 
+                    </div>
+                    <div class="cont-action-download col-6">
+                        <h3 class="titulo-inst2">
+                            Guifo creado con éxito
+                        </h3>
+                        <button id="copy-link" class="button-m button-rose">
+                            Copiar Enlace Guifo
+                        </button>
+                        <button id="download-file" class="button-m button-rose">
+                            Descargar Guifo
+                        </button>
+                    </div>
+                </div>    
+                <div class="cont-botones-down">
+                    <a href="./captura.html">
+                        <button class="listo-end button-m button-pink">
+                            Listo
+                        </button>
+                    </a>
+                </div>    
+            </div>
+        </section>
+        <section id="mis-guifos" class="grid-cont d-none">
+            <div class="cont-mis-guifos col-12 m-top">
+                <h2 class="titulo-bloques">
+                    Mis guifos
+                </h2>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="./assets/scripts/shared.js"></script>
+    <script src="./assets/scripts/captura.js"></script>
+</body>
+</html>

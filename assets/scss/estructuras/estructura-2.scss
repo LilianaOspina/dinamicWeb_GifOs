@@ -1,0 +1,220 @@
+#inicio-captura {
+    justify-content: flex-start;
+}
+.cont-arrow {
+    margin-right: -32px;
+    margin-top: 12px;
+}
+// contenedores
+#instrucciones {
+    display: flex;
+    justify-content: center;
+    min-width: 650px;
+}
+.cont-instrucciones {
+    min-width: 548px;
+    max-width: 600px;
+}
+
+#cont-captura,
+#upload,
+#download {
+    display: none;
+    justify-content: center;
+    min-width: 832px;
+    position: relative;
+}
+.contenedor {
+    position: relative;
+}
+.titulo-inst {
+    margin-top: 2%;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-left: -19px;
+}
+.titulo-inst2 {
+    margin-top: 2%;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+// isntrucciones
+.instrucciones {
+    margin-left: 11%;
+    margin-right: 11%;
+    line-height: 28px;
+}
+.img-window {
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-right: 3%;
+}
+.texto-inst {
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+ol {
+    counter-reset: list;
+    li {
+        font-size: 14px;
+        list-style: none;
+        color: #110038;
+    }
+    li::before {
+        font-weight: bold;
+        font-size: 14px;
+        counter-increment: list;
+        content: counter(list) ") ";
+    }
+}
+.g-style {
+    font-style: italic;
+    font-weight: bold;
+}
+.cont-botones {
+    display: flex;
+    margin-top: 3%;
+    width: 100%;
+    justify-content: flex-end;
+    padding-bottom: 2%;
+    padding-right: 2%;
+}
+.botones {
+    margin: 6px;
+}
+// video src
+.captura-video,
+.preview-gif,
+.cont-uploading,
+.preview-download {
+    width: 97%;
+    margin: auto;
+}
+// video capturado
+.preview-gif {
+    display: none;
+}
+#current-counter,
+#counter {
+    text-align: center;
+    padding-top: 5px;
+}
+// contenedores de botones dinamicos
+.cont-botones-check {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+.boton-cam {
+    padding-left: 5px;
+}
+.cam {
+    font-size: 15px;
+}
+.cont-botones-recording {
+    display: none;
+    width: 100%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.cont-botones-preview {
+    display: none;
+    justify-content: space-around;
+}
+//animaciones
+// contador
+.contador {
+    height: 29px;
+    width: 115px;
+    background: #ffffff;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+}
+// progress bar preview
+.progress-bar-preview {
+    height: 20px;
+}
+.play-gif {
+    float: left;
+    width: 19px;
+    animation-play-state: paused;
+}
+.barra-preview {
+    display: flex;
+    width: 78%;
+}
+// progress bar upload
+.progress-bar-upload {
+    height: 20px;
+    margin-top: 9px;
+}
+.barra-upload {
+    display: flex;
+    margin-top: 80px;
+    flex-direction: row;
+    justify-content: center;
+}
+.barritas {
+    width: 12px;
+    height: 20px;
+}
+#upload {
+    display: none;
+}
+.cont-uploading {
+    background: #ffffff;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+    text-align: center;
+    padding: 66px 15px;
+}
+.progress-upload {
+    text-align: -moz-center;
+}
+.time-joke {
+    font-size: 12px;
+    color: rgba(17, 0, 56, 0.64);
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 14px;
+    margin-top: 15px;
+}
+.time-joke-style {
+    text-decoration: line-through;
+}
+// contenedor DOWNLOAD
+#download {
+    display: none;
+}
+.down {
+    //contenedor previw + action
+    text-align: -moz-center;
+    width: 97%;
+    justify-content: space-evenly;
+    margin-top: 13px;
+}
+.preview-download {
+    width: 97%;
+    height: 148px;
+    margin-left: 4px;
+}
+.cont-action-download {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.cont-botones-down {
+    display: flex;
+    margin-top: 3%;
+    width: 100%;
+    justify-content: flex-end;
+    padding-bottom: 7%;
+    padding-right: 4%;
+    padding-top: 34px;
+}

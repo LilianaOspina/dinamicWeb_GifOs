@@ -1,0 +1,59 @@
+.barritas {
+    animation-name: color;
+    animation-duration: infinite;
+    animation-fill-mode: forwards;
+
+    &:nth-child(1){
+    animation-delay: 0s;
+    }
+    &:nth-child(2){
+    animation-delay: 0.5s;
+    }
+    &:nth-child(3){
+    animation-delay: 1s;
+    }
+    &:nth-child(4){
+    animation-delay: 1.5s;
+    }
+    &:nth-child(5){
+    animation-delay: 2s;
+    }
+    &:nth-child(6){
+    animation-delay: 2.5s;
+    }
+    &:nth-child(7){
+    animation-delay: 3s;
+    }
+    &:nth-child(8){
+    animation-delay: 3.5s;
+    }
+    &:nth-child(9){
+    animation-delay: 4s;
+    }
+    &:nth-child(10){
+    animation-delay: 4.5s;
+    }
+    &:nth-child(11){
+    animation-delay: 5s;
+    }
+    &:nth-child(12){
+    animation-delay: 5.5s;
+    }
+    &:nth-child(13){
+    animation-delay: 6s;
+    }
+    &:nth-child(14){
+    animation-delay: 6.5s;
+    }
+    &:nth-child(15){
+    animation-delay: 7s;
+    }
+    &:nth-child(16){
+    animation-delay: 7.5s;
+    }
+    &:nth-child(17){
+    animation-delay: 8s;
+    }
+}
+
+    
